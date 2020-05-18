@@ -1,0 +1,119 @@
+    1  apt-get update
+    2  git --version
+    3  git clone https://github.com/Jsuresh47/devopsclass.git
+    4  cd devopsclass/
+    5  ls
+    6  rm c1 c2 c3 f1 f2 f3 g1 g2 g3 h1 h2 h3
+    7  ls
+    8  git add .
+    9  git commit -m "removed files"
+   10  git push origin master
+   11  ls
+   12  touch file1
+   13  git status
+   14  git add .
+   15  git status
+   16  git commit -m "file1 added"
+   17  git log
+   18  git log --oneline
+   19  git reset --soft HEAD~1
+   20  git status
+   21  git log --oneline
+   22  git reset --soft 113bbb9
+   23  git log --oneline
+   24  git status
+   25  git log --oneline
+   26  git status
+   27  git commit -m "file1"
+   28  git status
+   29  touch file2
+   30  git status
+   31  git add file2
+   32  git status
+   33  git reset head file2
+   34  git reset HEAD file2
+   35  git status
+   36  git log --oneline
+   37  git log --oneline -3
+   38  ls
+   39  git status
+   40  git add file2
+   41  git commit -m "file2"
+   42  ls
+   43  git log --oneline -1
+   44  git reset --mixed HEAD~1
+   45  git status
+   46  git push
+   47  touch new
+   48  git add new 
+   49  git commit -m "new"
+   50  git push origin master
+   51  git pull
+   52  git add .
+   53  git commit -m "conflict"
+   54  git push origin master
+   55  ls
+   56  cat file1
+   57  vi file1
+   58  git add file1 
+   59  git commit -m "file edited by dev1"
+   60  git push origin master
+   61  git pull
+   62  ls
+   63  cat file1
+   64  vi file1
+   65  git add .
+   66  git commit -m "merge conflict resolved"
+   67  git push origin master
+   68  git log
+   69  git tag
+   70  git log --oneline
+   71  git tag v-1.1
+   72  git log --oneline
+   73  git tag v-1.2 b3aa59f
+   74  git log --oneline
+   75  git tags
+   76  git tag
+   77  git show v-1.1
+   78  git show v-1.2
+   79  git push --tags
+   80  git tag
+   81  git tag -d v-1.1
+   82  git tag
+   83  git log --oneline
+   84  git show v-1.2
+   85  git pull
+   86  git tag
+   87  git log
+   88  git tag
+   89  git tag -d v-1.1
+   90  git tag -d v-1.2
+   91  git tag
+   92  git push origin -d v-1.1
+   93  git stash list
+   94  touch s1
+   95  git status
+   96  git add s1
+   97  git status
+   98  git stash save "s1 file saved"
+   99  git status
+  100  git stash list
+  101  git stash show -p stash@{0}
+  102  git stash pop stash@{0}
+  103  git stash list
+  104  git commit -m "s1"
+  105  git status
+  106  touch d1
+  107  git add d1
+  108  git stash save "d1"
+  109  git stash list
+  110  touch h1
+  111  git add h1
+  112  git stash save "h1 file added"
+  113  git stash list
+  114  git stash show -p stash@{1}
+  115  git stash show -p stash@{0}
+  116  git stash pop stash@{1}
+  117  git stash list
+  118  history
+  119  history > commands.txt
