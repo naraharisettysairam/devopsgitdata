@@ -1,6 +1,6 @@
     1  apt-get update
     2  git --version
-    3  git clone https://github.com/Jsuresh47/devopsclass.git
+    3  git clone https://github.com/naraharisettysairam/devopsclass.git
     4  cd devopsclass/
     5  ls
     6  rm c1 c2 c3 f1 f2 f3 g1 g2 g3 h1 h2 h3
